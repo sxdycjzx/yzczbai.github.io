@@ -1,0 +1,115 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人工智能赛事在线活动报名表</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        #header-img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: 50px; /* 设置图片高度为50像素 */
+            object-fit: cover;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: none;
+        }
+
+        .page-links {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .page-links a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="header-img" src="your-image-path.jpg" alt="活动图片">
+    </header>
+
+    <h1 style="text-align: center;">人工智能赛事在线活动报名表</h1>
+
+    <form action="">
+        <label for="name">姓名:</label>
+        <input type="text" id="name" required>
+        
+        <label for="email">班级:</label>
+        <input type="email" id="email" required>
+        
+        <label for="phone">项目:</label>
+        <input type="tel" id="phone" required>
+        
+        <input type="submit" value="提交">
+    </form>
+
+    <div id="result"></div>
+
+    <div class="page-links">
+        <a href="index.html">首页</a>
+        <a href="richeng.html">人工智能赛事活动日程表</a>
+    </div>
+    
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('class').value;
+            var phone = document.getElementById('phone').value;
+            
+            // 显示提交结果
+            var resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '提交的结果是：姓名 - ' + name + '，班级 - ' + class + '，项目 - ' + bisai;
+            resultDiv.style.display = 'block';
+            
+            // 清空表单
+            document.getElementById('name').value = '';
+            document.getElementById('class').value = '';
+            document.getElementById('bisai').value = '';
+        });
+    </script>
+</body>
+</html>
